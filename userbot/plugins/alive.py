@@ -7,7 +7,7 @@ from . import ALIVE_NAME, StartTime, catversion, get_readable_time, mention, rep
 
 DEFAULTUSER = ALIVE_NAME or "GoodCatX"
 CAT_IMG = Config.ALIVE_PIC
-CUSTOM_ALIVE_TEXT = Config.CUSTOM_ALIVE_TEXT or "✮ MY GOODCATX IS RUNNING SUCCESSFULLY ✮"
+CUSTOM_ALIVE_TEXT = Config.CUSTOM_ALIVE_TEXT or "✮ ඇයි ඇයි ආආහ්? එහා පැත්තේ Run වෙන්නේ සොව්ඩි ✮"
 EMOJI = Config.CUSTOM_ALIVE_EMOJI or "  ✥ "
 
 
@@ -23,11 +23,11 @@ async def amireallyalive(alive):
         cat_caption = f"**{CUSTOM_ALIVE_TEXT}**\n\n"
         cat_caption += f"**{EMOJI} Database :** __{check_sgnirts}__\n"
         cat_caption += f"**{EMOJI} Telethon version :** __{version.__version__}\n__"
-        cat_caption += f"**{EMOJI} GoodCatX Version :** __{catversion}__\n"
+        cat_caption += f"**{EMOJI} Sowdy Version :** __{catversion}__\n"
         cat_caption += f"**{EMOJI} Python Version :** __{python_version()}\n__"
         cat_caption += f"**{EMOJI} Uptime :** __{uptime}\n__"
         cat_caption += f"**{EMOJI} Master:** {mention}\n"
-        cat_caption += f"**{EMOJI} Github Repo:** __**[GoodCatX](https://github.com/Anjana-Ma/GoodCatX)**__\n"
+        cat_caption += f"**{EMOJI} Github Repo:** __**[SowdyUB](https://github.com/OfficialBawwa/SowdyUB)**__\n"
         await alive.client.send_file(
             alive.chat_id, CAT_IMG, caption=cat_caption, reply_to=reply_to_id
         )
